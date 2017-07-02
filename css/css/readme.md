@@ -5,20 +5,22 @@
 npm install --save-dev css-loader style-loader
 ```
 
-```js
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ]
-      }
-    ]
+Extend the [basic](../basic/webpack.config.babel.js) config with the PostCSS config.
+
+```diff
+  module.exports = {
++   module: {
++     rules: [
++       {
++         test: /\.css$/,
++         use: [
++           'style-loader',
++           'css-loader',
++         ]
++       }
++     ]
++   }
   }
-}
 ```
 
 ## Usage
@@ -26,7 +28,7 @@ module.exports = {
 
 e.g. index.js
 ```diff
-+ import('./css/index.css') // ES6
++ import('./css/index.css')
 ```
 
 ## Extract CSS from the bundle into a file
