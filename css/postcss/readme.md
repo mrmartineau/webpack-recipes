@@ -5,16 +5,17 @@
 npm install --save-dev css-loader style-loader postcss-loader
 ```
 
-Extend the [basic](../basic/webpack.config.babel.js) config with the PostCSS config.
+Extend the [basic CSS](https://github.com/mrmartineau/webpack-recipes/tree/master/css/css#readme) [config](https://github.com/mrmartineau/webpack-recipes/blob/master/css/css/webpack.config.babel.js) with the PostCSS config.
 
 ```diff
   module.exports = {
-+   module: {
-+     rules: [
-+       {
-+         test: /\.css$/,
-+         use: [
-+           'style-loader',
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: [
+            'style-loader',
+-           'css-loader',
 +           {
 +             loader: 'css-loader',
 +             options: {
@@ -22,10 +23,10 @@ Extend the [basic](../basic/webpack.config.babel.js) config with the PostCSS con
 +             }
 +           },
 +           'postcss-loader'
-+         ]
-+       }
-+     ]
-+   }
+          ]
+        }
+      ]
+    }
   }
 ```
 
@@ -54,11 +55,25 @@ npm install --save-dev extract-text-webpack-plugin
           test: /\.css$/,
 -           use: [
 -             'style-loader',
--             'css-loader',
+-             {
+-               loader: 'css-loader',
+-               options: {
+-                 importLoaders: 1
+-               }
+-             },
+-             'postcss-loader'
 -           ]
 +           use: ExtractTextPlugin.extract({
-+             fallback: "style-loader",
-+             use: "css-loader"
++             fallback: 'style-loader',
++             use: [
++               {
++                 loader: 'css-loader',
++                 options: {
++                   importLoaders: 1
++                 }
++               },
++               'postcss-loader'
++             ]
 +           })
 +         }
       ]
