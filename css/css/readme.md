@@ -5,7 +5,7 @@
 npm install --save-dev css-loader style-loader
 ```
 
-Extend the [basic](../basic/webpack.config.babel.js) config with the PostCSS config.
+Extend the [basic](https://github.com/mrmartineau/webpack-recipes/blob/master/basic/webpack.config.babel.js) config with the PostCSS config.
 
 ```diff
   module.exports = {
