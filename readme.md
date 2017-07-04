@@ -22,7 +22,11 @@
 * [readme](css/postcss/#readme)
 * [webpack.config](css/postcss/webpack.config.babel.js)
 
-### Sass + PostCSS (coming soon)
+### [Sass](css/sass) with PostCSS (incomplete)
+> Bundle & inject Sass preprocessed CSS and use [PostCSS](http://postcss.org/) to post-process
+
+* [readme](css/sass/#readme)
+* [webpack.config](css/sass/webpack.config.babel.js)
 
 ---
 
