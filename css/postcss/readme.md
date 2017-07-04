@@ -104,5 +104,11 @@ Use `'eval'` in development and `'source-map'` in production.
     ]
   ],
 + devtool: 'eval', // or 'source-map'
+
+  // index.html
+  <head>
+    <title>Webpack recipe</title>
++   <link rel="stylesheet" href="/dist/styles.css">
+  </head>
 ```
 

@@ -42,12 +42,13 @@ npm install --save-dev css-loader style-loader
 ## Extract CSS from the bundle into a file
 
 ### Install [`extract-text-webpack-plugin`](https://github.com/webpack-contrib/extract-text-webpack-plugin)
+
 ```sh
 npm install --save-dev extract-text-webpack-plugin
 ```
 
 ```diff
-+ const ExtractTextPlugin = require("extract-text-webpack-plugin");
++ const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
   module.exports = {
     module: {
@@ -75,11 +76,18 @@ npm install --save-dev extract-text-webpack-plugin
 Use `'eval'` in development and `'source-map'` in production.
 
 ```diff
+  // webpack.config.babel.js
   module: {
     rules: [
       // ...
     ]
   ],
 + devtool: 'eval', // or 'source-map'
+
+  // index.html
+  <head>
+    <title>Webpack recipe</title>
++   <link rel="stylesheet" href="/dist/styles.css">
+  </head>
 ```
 
