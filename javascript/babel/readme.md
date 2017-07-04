@@ -31,7 +31,10 @@ Add the below config to your package.json. It uses [babel-preset-env](https://ba
 ```diff
 // package.json
    "devDependencies": {
-     //..
++    "babel-core": "^6.25.0",
++    "babel-loader": "^7.1.1",
++    "babel-preset-env": "^1.5.2",
+     "webpack": "^3.0.0"
 -  }
 +  },
 +  "babel": {

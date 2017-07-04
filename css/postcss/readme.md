@@ -29,6 +29,15 @@ npm install --save-dev css-loader style-loader postcss-loader
       ]
     }
   }
+
+  // package.json
+  "devDependencies": {
++   "autoprefixer": "^7.1.1",
++   "css-loader": "^0.28.4",
++   "postcss-loader": "^2.0.6",
++   "style-loader": "^0.18.2",
+    "webpack": "^3.0.0"
+- }
 ```
 
 ## Usage

@@ -22,6 +22,13 @@ npm install --save-dev css-loader style-loader
 +     ]
 +   }
   }
+
+  // package.json
+  "devDependencies": {
++   "css-loader": "^0.28.4",
++   "style-loader": "^0.18.2",
+    "webpack": "^3.0.0"
+- }
 ```
 
 ## Usage
