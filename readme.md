@@ -28,7 +28,7 @@
 
 ## [JavaScript](javascript)
 
-### ES2015+ (Babel) > JavaScript
+### [ES2015+ (Babel) > JavaScript](javascript/babel)
 > Bundle ES2015+ Javascript with Babel transpiler
 
 * [readme](javascript/babel/#readme)
