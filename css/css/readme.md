@@ -70,6 +70,12 @@ npm install --save-dev extract-text-webpack-plugin
 +     new ExtractTextPlugin("styles.css"),
 +   ]
   }
+
+  // index.html
+  <head>
+    <title>Webpack recipe</title>
++   <link rel="stylesheet" href="/dist/styles.css">
+  </head>
 ```
 
 ## Add Sourcemaps
@@ -83,11 +89,5 @@ Use `'eval'` in development and `'source-map'` in production.
     ]
   ],
 + devtool: 'eval', // or 'source-map'
-
-  // index.html
-  <head>
-    <title>Webpack recipe</title>
-+   <link rel="stylesheet" href="/dist/styles.css">
-  </head>
 ```
 
