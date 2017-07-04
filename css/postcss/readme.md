@@ -1,13 +1,14 @@
-# CSS
-> Bundle & inject CSS
+# PostCSS
+> Bundle & inject [PostCSS](http://postcss.org/) processed CSS
+
+*Extend the [basic CSS](https://github.com/mrmartineau/webpack-recipes/tree/master/css/css#readme) [config](https://github.com/mrmartineau/webpack-recipes/blob/master/css/css/webpack.config.babel.js) with the PostCSS config.*
 
 ```
 npm install --save-dev css-loader style-loader postcss-loader
 ```
 
-Extend the [basic CSS](https://github.com/mrmartineau/webpack-recipes/tree/master/css/css#readme) [config](https://github.com/mrmartineau/webpack-recipes/blob/master/css/css/webpack.config.babel.js) with the PostCSS config.
-
 ```diff
+  // webpack.config.babel.js
   module.exports = {
     module: {
       rules: [
@@ -33,8 +34,8 @@ Extend the [basic CSS](https://github.com/mrmartineau/webpack-recipes/tree/maste
 ## Usage
 `import` a CSS file relative to your javascript module
 
-e.g. index.js
 ```diff
+// index.js
 + import('./css/index.css')
 ```
 

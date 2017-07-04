@@ -1,13 +1,14 @@
 # CSS
 > Bundle & inject CSS
 
+*Extend the [basic](https://github.com/mrmartineau/webpack-recipes/blob/master/basic/webpack.config.babel.js) config.*
+
 ```
 npm install --save-dev css-loader style-loader
 ```
 
-Extend the [basic](https://github.com/mrmartineau/webpack-recipes/blob/master/basic/webpack.config.babel.js) config with the PostCSS config.
-
 ```diff
+  // webpack.config.babel.js
   module.exports = {
 +   module: {
 +     rules: [
@@ -26,8 +27,8 @@ Extend the [basic](https://github.com/mrmartineau/webpack-recipes/blob/master/ba
 ## Usage
 `import` a CSS file relative to your javascript module
 
-e.g. index.js
 ```diff
+// index.js
 + import('./css/index.css')
 ```
 

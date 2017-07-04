@@ -1,4 +1,4 @@
-# CSS
+# Basic example
 > Bundle Javascript
 
 ```
@@ -6,6 +6,7 @@ npm install --save-dev webpack
 ```
 
 ```js
+// webpack.config.babel.js
 const {resolve} = require('path')
 
 module.exports = {
@@ -21,43 +22,18 @@ module.exports = {
 ```
 
 ## Usage
-`import` a CSS file relative to your javascript module
+`import` a Javascript file relative to your javascript module
 
-e.g. index.js
 ```js
-import('./css/index.css')
-```
+// index.js
+import foo from './foo';
 
-## Extract CSS from the bundle into a file
+foo();
 
-### Install [`extract-text-webpack-plugin`](https://github.com/webpack-contrib/extract-text-webpack-plugin)
-```sh
-npm install --save-dev extract-text-webpack-plugin
-```
-
-```diff
-+ const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-  module.exports = {
-    module: {
-      rules: [
-        {
-          test: /\.css$/,
--           use: [
--             'style-loader',
--             'css-loader',
--           ]
-+           use: ExtractTextPlugin.extract({
-+             fallback: "style-loader",
-+             use: "css-loader"
-+           })
-+         }
-      ]
-    },
-+   plugins: [
-+     new ExtractTextPlugin("styles.css"),
-+   ]
-  }
+// foo.js
+export default function foo() {
+  console.log('foo')
+}
 ```
 
 ## Add Sourcemaps

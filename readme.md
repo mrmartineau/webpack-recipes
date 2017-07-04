@@ -6,26 +6,37 @@
 * [readme](basic/#readme)
 * [webpack.config](basic/webpack.config.babel.js)
 
-## CSS
+---
 
-### CSS
+## [CSS](css)
+
+### [CSS](css/css)
 > Bundle & inject CSS
 
 * [readme](css/css/#readme)
 * [webpack.config](css/css/webpack.config.babel.js)
 
-### PostCSS
+### [PostCSS](css/postcss)
 > Bundle & inject [PostCSS](http://postcss.org/) processed CSS
 
 * [readme](css/postcss/#readme)
-* [webpack.config](css/css/webpack.config.babel.js)
+* [webpack.config](css/postcss/webpack.config.babel.js)
 
 ### Sass + PostCSS (coming soon)
 
-## JavaScript
+---
 
-### ES2015+ (Babel) > JavaScript (coming soon)
+## [JavaScript](javascript)
+
+### ES2015+ (Babel) > JavaScript
+> Bundle ES2015+ Javascript with Babel transpiler
+
+* [readme](javascript/babel/#readme)
+* [webpack.config](javascript/babel/webpack.config.babel.js)
+
 ### Typescript > JavaScript (coming soon)
+
+---
 
 ## Assets
 
@@ -33,6 +44,8 @@
 ### SVGs (coming soon)
 ### Fonts (coming soon)
 ### Icons (coming soon)
+
+---
 
 ## Testing
 
@@ -43,6 +56,8 @@
 ### ESLint (coming soon)
 ### Standard (coming soon)
 ### A11y (coming soon)
+
+---
 
 ## Advanced
 
