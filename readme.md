@@ -1,7 +1,7 @@
 # Webpack recipes
 > A collection of webpack configurations
 
-## Basics
+## [Basics](basic)
 > Bundle javascript
 * [readme](basic/#readme)
 * [webpack.config](basic/webpack.config.babel.js)
