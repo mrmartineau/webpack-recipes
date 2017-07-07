@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           'style-loader',
           {
@@ -24,18 +24,6 @@ module.exports = {
           },
           'postcss-loader',
           'sass-loader',
-          // {
-          //   loader: 'postcss-loader',
-          //   options: {
-          //     sourceMap: true
-          //   }
-          // },
-          // {
-          //   loader: 'sass-loader',
-          //   options: {
-          //     sourceMap: true
-          //   }
-          // }
         ]
       }
     ]
