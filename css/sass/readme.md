@@ -4,7 +4,7 @@
 *Extend the [basic CSS](https://github.com/mrmartineau/webpack-recipes/tree/master/css/css#readme) [config](https://github.com/mrmartineau/webpack-recipes/blob/master/css/css/webpack.config.babel.js) with the PostCSS config.*
 
 ```
-npm install --save-dev css-loader style-loader postcss-loader sass-loader
+npm install --save-dev css-loader style-loader postcss-loader sass-loader node-sass
 ```
 
 ```diff
@@ -13,14 +13,16 @@ npm install --save-dev css-loader style-loader postcss-loader sass-loader
     module: {
       rules: [
         {
-          test: /\.css$/,
+-         test: /\.css$/,
++         test: /\.scss$/,
           use: [
             'style-loader',
 -           'css-loader',
 +           {
 +             loader: 'css-loader',
 +             options: {
-+               importLoaders: 1
++               importLoaders: 1,
++               sourceMap: true
 +             }
 +           },
 +           'postcss-loader'
@@ -36,6 +38,7 @@ npm install --save-dev css-loader style-loader postcss-loader sass-loader
 +   "autoprefixer": "^7.1.1",
 +   "css-loader": "^0.28.4",
 +   "postcss-loader": "^2.0.6",
++   "node-sass": "^4.5.3",
 +   "sass-loader": "^6.0.6",
 +   "style-loader": "^0.18.2",
     "webpack": "^3.0.0"
@@ -64,7 +67,7 @@ npm install --save-dev extract-text-webpack-plugin
     module: {
       rules: [
         {
-          test: /\.css$/,
+          test: /\.scss$/,
 -           use: [
 -             'style-loader',
 -             {
@@ -82,7 +85,8 @@ npm install --save-dev extract-text-webpack-plugin
 +               {
 +                 loader: 'css-loader',
 +                 options: {
-+                   importLoaders: 1
++                   importLoaders: 1,
++                   sourceMap: true
 +                 }
 +               },
 +               'postcss-loader'
