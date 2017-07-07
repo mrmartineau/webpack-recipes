@@ -68,5 +68,9 @@
 ### Code Splitting (coming soon)
 ### Commons Chunks (coming soon)
 ### Progressive Web Apps (coming soon)
-### Useful
-* CaseSensitivePathsPlugin (coming soon)
+
+---
+
+## Useful plugins
+* [Case Sensitive Paths](https://github.com/Urthen/case-sensitive-paths-webpack-plugin#case-sensitive-paths---webpack-plugin) - Enforces case sensitive paths in Webpack requires. Extremely useful for larger teams and continuous integration setups work without issues.
+* [npm Install Webpack Plugin](https://github.com/webpack-contrib/npm-install-webpack-plugin) - Speed up development by **automatically installing & saving dependencies** with Webpack.
