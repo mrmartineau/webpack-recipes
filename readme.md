@@ -75,8 +75,10 @@
 
 ## Advanced
 
-### Code Splitting (coming soon)
-### Commons Chunks (coming soon)
+### Optimisation
+#### [Code splitting - Commons Chunks](optimisation/common-chunks)
+> Split all `node_module` vendor code into separate file
+
 ### Progressive Web Apps (coming soon)
 
 ---
