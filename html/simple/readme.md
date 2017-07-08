@@ -18,7 +18,7 @@ npm install --save-dev webpack html-webpack-plugin
       app: './index.js',
     },
     output: {
-      filename: 'bundle.[name].js',
+      filename: '[name].bundle.js',
       path: resolve(__dirname, 'dist'),
 -   }
 +   },
@@ -40,8 +40,8 @@ To change value of `output.filename` in your `webpack.config.babel.js` like so:
 ```diff
     // webpack.config.babel.js
     output: {
--     filename: 'bundle.[name].js',
-+     filename: 'bundle.[name].[hash].js',
+-     filename: '[name].bundle.js',
++     filename: '[name].bundle.[hash].js',
       path: resolve(__dirname, 'dist'),
     }
 ```
