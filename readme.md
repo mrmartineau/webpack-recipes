@@ -42,6 +42,16 @@
 
 ---
 
+## HTML
+
+### [Simple HTML](html/simple)
+> Simplify creation of HTML files to serve your webpack bundles
+
+### [Complex HTML](html/complex) (coming soon)
+> More complex version of previous example
+
+---
+
 ## Assets
 
 ### Images (coming soon)
