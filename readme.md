@@ -47,7 +47,10 @@
 ### [Simple HTML](html/simple)
 > Simplify creation of HTML files to serve your webpack bundles
 
-### [Complex HTML](html/complex) (coming soon)
+* [readme](html/simple/#readme)
+* [webpack.config](html/simple/webpack.config.babel.js)
+
+### Complex HTML (coming soon)
 > More complex version of previous example
 
 ---
@@ -78,6 +81,9 @@
 ### Optimisation
 #### [Code splitting - Commons Chunks](optimisation/common-chunks)
 > Split all `node_module` vendor code into separate file
+
+* [readme](optimisation/common-chunks/#readme)
+* [webpack.config](optimisation/common-chunks/webpack.config.babel.js)
 
 ### Progressive Web Apps (coming soon)
 
