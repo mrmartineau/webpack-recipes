@@ -55,6 +55,16 @@
 
 ---
 
+## Webpack Dev Server
+
+### [Simple Webpack Dev Server](devserver/simple)
+> Setup a simple webpack-dev-server example, that provides you with a server and live reloading.
+
+* [readme](devserver/simple/#readme)
+* [webpack.config](devserver/simple/webpack.config.babel.js)
+
+---
+
 ## Assets
 
 ### Images (coming soon)
