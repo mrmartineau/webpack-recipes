@@ -90,7 +90,7 @@
 
 ### Optimisation
 #### [Code splitting - Commons Chunks](optimisation/common-chunks)
-> Split all `node_module` vendor code into separate file
+> Split all `node_modules` vendor code into separate file
 
 * [readme](optimisation/common-chunks/#readme)
 * [webpack.config](optimisation/common-chunks/webpack.config.babel.js)
@@ -102,3 +102,12 @@
 ## Useful plugins
 * [Case Sensitive Paths](https://github.com/Urthen/case-sensitive-paths-webpack-plugin#case-sensitive-paths---webpack-plugin) - Enforces case sensitive paths in Webpack requires. Extremely useful for larger teams and continuous integration setups work without issues.
 * [npm Install Webpack Plugin](https://github.com/webpack-contrib/npm-install-webpack-plugin) - Speed up development by **automatically installing & saving dependencies** with Webpack.
+
+---
+
+# How can you help?
+Contributions and corrections are actively encouraged. I want this resource to be as useful as possible.
+
+---
+
+Made by [Zander](https://zander.wtf)
