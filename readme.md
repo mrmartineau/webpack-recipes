@@ -78,10 +78,25 @@
 
 ### Jest (coming soon)
 
-## Linting
+## Formatting
+### [ESLint](formatting/eslint)
+> Lint your code with [ESLint](http://eslint.org/)
 
-### ESLint (coming soon)
-### Standard (coming soon)
+* [readme](formatting/eslint/#readme)
+* [webpack.config](formatting/eslint/webpack.config.babel.js)
+
+### [Standard](formatting/standard)
+> Lint your code with [standard](https://standardjs.com/)
+
+* [readme](formatting/standard/#readme)
+* [webpack.config](formatting/standard/webpack.config.babel.js)
+
+### [Prettier](formatting/prettier)
+> Run the [Prettier](https://github.com/prettier/prettier) code formatter on build/watch
+
+* [readme](formatting/prettier/#readme)
+* [webpack.config](formatting/prettier/webpack.config.babel.js)
+
 ### A11y (coming soon)
 
 ---

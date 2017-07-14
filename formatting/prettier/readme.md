@@ -1,5 +1,5 @@
 # Prettier
-> Run the Prettier code formatter on build/watch
+> Run the [Prettier](https://github.com/prettier/prettier) code formatter on build/watch
 
 *Extend the [JavaScript Babel](https://github.com/mrmartineau/webpack-recipes/blob/master/javascript/babel/webpack.config.babel.js) config.*
 
