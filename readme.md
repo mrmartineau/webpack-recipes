@@ -1,4 +1,11 @@
-# Webpack recipes
+<h1 align="center">
+  Webpack recipes
+
+  [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+  ![](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+</h1>
+
 > A collection of webpack configurations
 
 ## [Basics](basic)
@@ -125,4 +132,4 @@ Contributions and corrections are actively encouraged. I want this resource to b
 
 ---
 
-Made by [Zander](https://zander.wtf)
+> Made by [ZΛNDΞR :zap:](https://github.com/mrmartineau/)
